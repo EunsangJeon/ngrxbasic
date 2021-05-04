@@ -1,0 +1,7 @@
+<div class="amazon">
+  <h2>Amazon component</h2>
+  Search criteria: {{searchFor$ | async}}
+  <ul>
+    <li *ngFor="let p of searchResults$ | async">{{p}}</li>
+  </ul>
+</div>
